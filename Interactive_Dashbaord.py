@@ -1,3 +1,26 @@
+#Import packages
+
+import pickle
+import streamlit as st
+import streamlit.components.v1 as components
+import pandas as pd
+import numpy as np
+import yfinance as yf
+import shap
+import matplotlib.pyplot as plt
+import plotly.graph_objects as go
+from sklearn import model_selection
+from sklearn.neighbors import NearestNeighbors
+import seaborn as sns
+import dvc.api
+import lightgbm
+from matplotlib.image import imread
+import datetime
+import plotly.graph_objects as go
+import webbrowser
+import time # to simulate a real time data, time loop 
+import plotly.express as px # interactive charts 
+
 
    # ##################################################
     # Interactive Dashboard
