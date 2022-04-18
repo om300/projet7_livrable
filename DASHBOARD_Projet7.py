@@ -30,7 +30,7 @@ def load_data():
 	'''
 
 	# Chargement du modèle pré-entrainé	
-	pickle_in = dvc.api.read('lgbm_model.pkl',
+	pickle_in = dvc.api.read('lgbm.pkl',
     repo='https://github.com/om300/projet7_livrable.git',
     mode='rb')
 	lgbm=pickle.loads(pickle_in)
