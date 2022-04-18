@@ -25,7 +25,6 @@ placeholder = st.empty()
 df = df[df['NAME_CONTRACT_TYPE']==NAME_CONTRACT_TYPE_filter]
 
 
-
 # near real-time / live feed simulation 
 
 for seconds in range(2306):
