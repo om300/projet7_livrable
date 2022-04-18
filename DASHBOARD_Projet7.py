@@ -36,11 +36,11 @@ def load_data():
 	lgbm=pickle.loads(pickle_in)
 
 	#Chargement des données de test
-	db_test=pd.read_csv('https://github.com/om300/projet7_livrable/blob/00093119f94c4afc84565bc26e7e446c14d2ee9e/df_app.csv?raw=true')
+	db_test=pd.read_csv('https://github.com/om300/projet7_livrable/blob/0783ef223e233d254c8a31017814229f276d9014/data_app.csv?raw=true')
 	db_test['YEARS_BIRTH']=(db_test['DAYS_BIRTH']/-365).apply(lambda x: int(x))
 	db_test=db_test.reset_index(drop=True)
-	df_test=pd.read_csv('https://github.com/om300/projet7_livrable/blob/00093119f94c4afc84565bc26e7e446c14d2ee9e/df_test.csv?raw=true')
-	logo=imread("https://github.com/om300/projet7_livrable/blob/56f78a966af1f3af059fae5aa20b13f905b65942/Logo_OpenClassrooms.png?raw=true")
+	df_test=pd.read_csv('https://github.com/om300/projet7_livrable/blob/0783ef223e233d254c8a31017814229f276d9014/data_test.csv?raw=true')
+	logo=imread("https://github.com/om300/projet7_livrable/blob/0783ef223e233d254c8a31017814229f276d9014/Logo_OpenClassrooms.png?raw=true")
 
 
 	#Calcul des SHAP values
