@@ -4,7 +4,7 @@
     # ##################################################
 
 # read csv from a github repo
-df = pd.read_csv("https://github.com/om300/projet7_livrable/blob/a70d7bc18821fc10284de560199b9c1628a96a6c/data.csv?raw=true")
+df = pd.read_csv("https://github.com/om300/projet7_livrable/blob/ab7c5ee3522df5de9ad4c88afbf28b02acb93b07/data.csv?raw=true")
 
 st.markdown("<h1 style='text-align: center; color: green;'>Projet 7: Openclassrooms</h1>", unsafe_allow_html=True)
 
