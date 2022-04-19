@@ -423,7 +423,7 @@ def display_charts(df,client):
 
 #Définition des graphes KDE avec une ligne verticale indiquant la position du client
 def chart_kde(title,row,df,col,client):
-with row:
+	with row:
 		st.subheader(title)
 		fig,ax = plt.subplots()
 		sns.kdeplot(df.loc[df['TARGET']==0,col],color='green', label = 'Target == 0')
